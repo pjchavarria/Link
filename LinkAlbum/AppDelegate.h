@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class SVModalWebViewController;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (strong, nonatomic) SVModalWebViewController *controller;
 
 @end
 

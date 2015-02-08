@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8408281F1F021283596D78F4 /* libPods-LinkAlbum.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BE1BABE40A1F77B5C18F3471 /* libPods-LinkAlbum.a */; };
 		DA4EFCA61A86BC00006FDB43 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4EFCA51A86BC00006FDB43 /* main.m */; };
 		DA4EFCA91A86BC00006FDB43 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4EFCA81A86BC00006FDB43 /* AppDelegate.m */; };
 		DA4EFCAC1A86BC00006FDB43 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4EFCAB1A86BC00006FDB43 /* ViewController.m */; };
@@ -14,6 +15,16 @@
 		DA4EFCB11A86BC00006FDB43 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA4EFCB01A86BC00006FDB43 /* Images.xcassets */; };
 		DA4EFCB41A86BC00006FDB43 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA4EFCB21A86BC00006FDB43 /* LaunchScreen.xib */; };
 		DA4EFCC01A86BC00006FDB43 /* LinkAlbumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4EFCBF1A86BC00006FDB43 /* LinkAlbumTests.m */; };
+		DA4EFCCB1A86D8DD006FDB43 /* CollectionViewCellVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4EFCCA1A86D8DD006FDB43 /* CollectionViewCellVideo.m */; };
+		DA4EFCCE1A86D972006FDB43 /* YoutubeAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4EFCCD1A86D972006FDB43 /* YoutubeAPIClient.m */; };
+		DAA55AED1A87EC0800E377E8 /* launch.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DAA55AEC1A87EC0800E377E8 /* launch.PNG */; };
+		DAC8FB1E1A870A38004E37B7 /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB1D1A870A38004E37B7 /* EditorViewController.m */; };
+		DAC8FB211A870F02004E37B7 /* CustomActivityItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB201A870F02004E37B7 /* CustomActivityItemProvider.m */; };
+		DAC8FB241A8713BD004E37B7 /* LinkAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB231A8713BD004E37B7 /* LinkAPIClient.m */; };
+		DAC8FB261A872975004E37B7 /* livePaperLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC8FB251A872975004E37B7 /* livePaperLogo.png */; };
+		DAC8FB281A872ADF004E37B7 /* livePaperLogo-20.png in Resources */ = {isa = PBXBuildFile; fileRef = DAC8FB271A872ADF004E37B7 /* livePaperLogo-20.png */; };
+		DAC8FB2B1A873366004E37B7 /* HeliosAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB2A1A873366004E37B7 /* HeliosAPIClient.m */; };
+		DAC8FB321A87584E004E37B7 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB311A87584E004E37B7 /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9DFD0842DC112F40609B723D /* Pods-LinkAlbum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkAlbum.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LinkAlbum/Pods-LinkAlbum.debug.xcconfig"; sourceTree = "<group>"; };
+		BE1BABE40A1F77B5C18F3471 /* libPods-LinkAlbum.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LinkAlbum.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4EFCA01A86BC00006FDB43 /* LinkAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4EFCA41A86BC00006FDB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4EFCA51A86BC00006FDB43 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +53,24 @@
 		DA4EFCB91A86BC00006FDB43 /* LinkAlbumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinkAlbumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA4EFCBE1A86BC00006FDB43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA4EFCBF1A86BC00006FDB43 /* LinkAlbumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkAlbumTests.m; sourceTree = "<group>"; };
+		DA4EFCC91A86D8DD006FDB43 /* CollectionViewCellVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCellVideo.h; sourceTree = "<group>"; };
+		DA4EFCCA1A86D8DD006FDB43 /* CollectionViewCellVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCellVideo.m; sourceTree = "<group>"; };
+		DA4EFCCC1A86D972006FDB43 /* YoutubeAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubeAPIClient.h; sourceTree = "<group>"; };
+		DA4EFCCD1A86D972006FDB43 /* YoutubeAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubeAPIClient.m; sourceTree = "<group>"; };
+		DAA55AEC1A87EC0800E377E8 /* launch.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.PNG; sourceTree = "<group>"; };
+		DAC8FB1C1A870A38004E37B7 /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
+		DAC8FB1D1A870A38004E37B7 /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
+		DAC8FB1F1A870F02004E37B7 /* CustomActivityItemProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActivityItemProvider.h; sourceTree = "<group>"; };
+		DAC8FB201A870F02004E37B7 /* CustomActivityItemProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActivityItemProvider.m; sourceTree = "<group>"; };
+		DAC8FB221A8713BD004E37B7 /* LinkAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkAPIClient.h; sourceTree = "<group>"; };
+		DAC8FB231A8713BD004E37B7 /* LinkAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkAPIClient.m; sourceTree = "<group>"; };
+		DAC8FB251A872975004E37B7 /* livePaperLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = livePaperLogo.png; sourceTree = "<group>"; };
+		DAC8FB271A872ADF004E37B7 /* livePaperLogo-20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "livePaperLogo-20.png"; sourceTree = "<group>"; };
+		DAC8FB291A873366004E37B7 /* HeliosAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeliosAPIClient.h; sourceTree = "<group>"; };
+		DAC8FB2A1A873366004E37B7 /* HeliosAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeliosAPIClient.m; sourceTree = "<group>"; };
+		DAC8FB301A87584E004E37B7 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		DAC8FB311A87584E004E37B7 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		F759C4CB9FA0C644960DEBDB /* Pods-LinkAlbum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkAlbum.release.xcconfig"; path = "Pods/Target Support Files/Pods-LinkAlbum/Pods-LinkAlbum.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8408281F1F021283596D78F4 /* libPods-LinkAlbum.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +92,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6D2742BA0995A5FA390EAF81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE1BABE40A1F77B5C18F3471 /* libPods-LinkAlbum.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DA4EFC971A86BC00006FDB43 = {
 			isa = PBXGroup;
 			children = (
 				DA4EFCA21A86BC00006FDB43 /* LinkAlbum */,
 				DA4EFCBC1A86BC00006FDB43 /* LinkAlbumTests */,
 				DA4EFCA11A86BC00006FDB43 /* Products */,
+				E39D6A64574F6D2066714E2D /* Pods */,
+				6D2742BA0995A5FA390EAF81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -85,10 +127,27 @@
 				DA4EFCA81A86BC00006FDB43 /* AppDelegate.m */,
 				DA4EFCAA1A86BC00006FDB43 /* ViewController.h */,
 				DA4EFCAB1A86BC00006FDB43 /* ViewController.m */,
+				DAC8FB301A87584E004E37B7 /* MyViewController.h */,
+				DAC8FB311A87584E004E37B7 /* MyViewController.m */,
 				DA4EFCAD1A86BC00006FDB43 /* Main.storyboard */,
 				DA4EFCB01A86BC00006FDB43 /* Images.xcassets */,
+				DAA55AEC1A87EC0800E377E8 /* launch.PNG */,
 				DA4EFCB21A86BC00006FDB43 /* LaunchScreen.xib */,
 				DA4EFCA31A86BC00006FDB43 /* Supporting Files */,
+				DA4EFCC91A86D8DD006FDB43 /* CollectionViewCellVideo.h */,
+				DA4EFCCA1A86D8DD006FDB43 /* CollectionViewCellVideo.m */,
+				DA4EFCCC1A86D972006FDB43 /* YoutubeAPIClient.h */,
+				DA4EFCCD1A86D972006FDB43 /* YoutubeAPIClient.m */,
+				DAC8FB221A8713BD004E37B7 /* LinkAPIClient.h */,
+				DAC8FB231A8713BD004E37B7 /* LinkAPIClient.m */,
+				DAC8FB291A873366004E37B7 /* HeliosAPIClient.h */,
+				DAC8FB2A1A873366004E37B7 /* HeliosAPIClient.m */,
+				DAC8FB1C1A870A38004E37B7 /* EditorViewController.h */,
+				DAC8FB1D1A870A38004E37B7 /* EditorViewController.m */,
+				DAC8FB1F1A870F02004E37B7 /* CustomActivityItemProvider.h */,
+				DAC8FB201A870F02004E37B7 /* CustomActivityItemProvider.m */,
+				DAC8FB251A872975004E37B7 /* livePaperLogo.png */,
+				DAC8FB271A872ADF004E37B7 /* livePaperLogo-20.png */,
 			);
 			path = LinkAlbum;
 			sourceTree = "<group>";
@@ -119,22 +178,33 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E39D6A64574F6D2066714E2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DFD0842DC112F40609B723D /* Pods-LinkAlbum.debug.xcconfig */,
+				F759C4CB9FA0C644960DEBDB /* Pods-LinkAlbum.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DA4EFC9F1A86BC00006FDB43 /* LinkAlbum */ = {
+		DA4EFC9F1A86BC00006FDB43 /* YLink */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA4EFCC31A86BC00006FDB43 /* Build configuration list for PBXNativeTarget "LinkAlbum" */;
+			buildConfigurationList = DA4EFCC31A86BC00006FDB43 /* Build configuration list for PBXNativeTarget "YLink" */;
 			buildPhases = (
+				4C44194E9D691E3158CE9D37 /* Check Pods Manifest.lock */,
 				DA4EFC9C1A86BC00006FDB43 /* Sources */,
 				DA4EFC9D1A86BC00006FDB43 /* Frameworks */,
 				DA4EFC9E1A86BC00006FDB43 /* Resources */,
+				98A97481DE12EDCC4B131B1C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = LinkAlbum;
+			name = YLink;
 			productName = LinkAlbum;
 			productReference = DA4EFCA01A86BC00006FDB43 /* LinkAlbum.app */;
 			productType = "com.apple.product-type.application";
@@ -175,7 +245,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DA4EFC9B1A86BC00006FDB43 /* Build configuration list for PBXProject "LinkAlbum" */;
+			buildConfigurationList = DA4EFC9B1A86BC00006FDB43 /* Build configuration list for PBXProject "YLink" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,7 +258,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DA4EFC9F1A86BC00006FDB43 /* LinkAlbum */,
+				DA4EFC9F1A86BC00006FDB43 /* YLink */,
 				DA4EFCB81A86BC00006FDB43 /* LinkAlbumTests */,
 			);
 		};
@@ -199,7 +269,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAC8FB281A872ADF004E37B7 /* livePaperLogo-20.png in Resources */,
+				DAA55AED1A87EC0800E377E8 /* launch.PNG in Resources */,
 				DA4EFCAF1A86BC00006FDB43 /* Main.storyboard in Resources */,
+				DAC8FB261A872975004E37B7 /* livePaperLogo.png in Resources */,
 				DA4EFCB41A86BC00006FDB43 /* LaunchScreen.xib in Resources */,
 				DA4EFCB11A86BC00006FDB43 /* Images.xcassets in Resources */,
 			);
@@ -214,14 +287,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4C44194E9D691E3158CE9D37 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		98A97481DE12EDCC4B131B1C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LinkAlbum/Pods-LinkAlbum-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DA4EFC9C1A86BC00006FDB43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				DA4EFCAC1A86BC00006FDB43 /* ViewController.m in Sources */,
+				DAC8FB241A8713BD004E37B7 /* LinkAPIClient.m in Sources */,
+				DAC8FB1E1A870A38004E37B7 /* EditorViewController.m in Sources */,
 				DA4EFCA91A86BC00006FDB43 /* AppDelegate.m in Sources */,
+				DAC8FB321A87584E004E37B7 /* MyViewController.m in Sources */,
+				DA4EFCCE1A86D972006FDB43 /* YoutubeAPIClient.m in Sources */,
+				DAC8FB211A870F02004E37B7 /* CustomActivityItemProvider.m in Sources */,
+				DA4EFCCB1A86D8DD006FDB43 /* CollectionViewCellVideo.m in Sources */,
 				DA4EFCA61A86BC00006FDB43 /* main.m in Sources */,
+				DAC8FB2B1A873366004E37B7 /* HeliosAPIClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +351,7 @@
 /* Begin PBXTargetDependency section */
 		DA4EFCBB1A86BC00006FDB43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA4EFC9F1A86BC00006FDB43 /* LinkAlbum */;
+			target = DA4EFC9F1A86BC00006FDB43 /* YLink */;
 			targetProxy = DA4EFCBA1A86BC00006FDB43 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -341,21 +454,23 @@
 		};
 		DA4EFCC41A86BC00006FDB43 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DFD0842DC112F40609B723D /* Pods-LinkAlbum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LinkAlbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LinkAlbum;
 			};
 			name = Debug;
 		};
 		DA4EFCC51A86BC00006FDB43 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F759C4CB9FA0C644960DEBDB /* Pods-LinkAlbum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LinkAlbum/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LinkAlbum;
 			};
 			name = Release;
 		};
@@ -373,7 +488,7 @@
 				);
 				INFOPLIST_FILE = LinkAlbumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LinkAlbumTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkAlbum.app/LinkAlbum";
 			};
 			name = Debug;
@@ -388,7 +503,7 @@
 				);
 				INFOPLIST_FILE = LinkAlbumTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LinkAlbumTests;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LinkAlbum.app/LinkAlbum";
 			};
 			name = Release;
@@ -396,7 +511,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA4EFC9B1A86BC00006FDB43 /* Build configuration list for PBXProject "LinkAlbum" */ = {
+		DA4EFC9B1A86BC00006FDB43 /* Build configuration list for PBXProject "YLink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA4EFCC11A86BC00006FDB43 /* Debug */,
@@ -405,13 +520,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DA4EFCC31A86BC00006FDB43 /* Build configuration list for PBXNativeTarget "LinkAlbum" */ = {
+		DA4EFCC31A86BC00006FDB43 /* Build configuration list for PBXNativeTarget "YLink" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA4EFCC41A86BC00006FDB43 /* Debug */,
 				DA4EFCC51A86BC00006FDB43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA4EFCC61A86BC00006FDB43 /* Build configuration list for PBXNativeTarget "LinkAlbumTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +536,7 @@
 				DA4EFCC81A86BC00006FDB43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
