@@ -85,7 +85,7 @@
              // do something with image
              self.videoImage.image = image;
              
-             self.footerImage.image = [self drawFront:[UIImage imageNamed:@"white"] text:combined size:20.0f atPoint:CGPointMake(120,10)];
+             self.footerImage.image = [self drawFront:[UIImage imageNamed:@"white"] text:combined size:25.0f atPoint:CGPointMake(30,10)];
          }
      }];
     
@@ -142,9 +142,9 @@
 - (void)showActivityProviderWithImage:(UIImage *)image
 {
     
-    self.footerImage.image = [self drawFront:[UIImage imageNamed:@"white"] text:self.textField.text size:30.0f atPoint:CGPointMake(120, 10)];
-    image = [self imageByCombiningImage:image withImage:self.footerImage.image secondImagePoint:CGPointMake(0, image.size.height) sumSizes:YES];
-    image = [self imageByCombiningImage:image withImage:[UIImage imageNamed:@"livePaperLogo-20"] secondImagePoint:CGPointMake(image.size.width-30, 10) sumSizes:NO];
+    UIImage *newImage = [self drawFront:[UIImage imageNamed:@"white"] text:self.textField.text size:25.0f atPoint:CGPointMake(120, 10)];
+    image = [self imageByCombiningImage:image withImage:newImage secondImagePoint:CGPointMake(0, image.size.height) sumSizes:YES];
+    image = [self imageByCombiningImage:image withImage:[UIImage imageNamed:@"livePaperLogo-20"] secondImagePoint:CGPointMake(image.size.width-120, 30) sumSizes:NO];
     
     NSMutableArray *activityItems = [NSMutableArray arrayWithObjects:@"title",image, nil];
     
