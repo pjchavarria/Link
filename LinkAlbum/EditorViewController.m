@@ -16,6 +16,7 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *printButton;
 @property (weak, nonatomic) IBOutlet UIImageView *videoImage;
+@property (weak, nonatomic) IBOutlet UIImageView *footerImage;
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 
 @property (strong, nonatomic) NSDictionary *data;
@@ -84,7 +85,7 @@
              // do something with image
              self.videoImage.image = image;
              
-             self.videoImage.image = [self drawFront:image text:combined atPoint:CGPointMake(30, self.videoImage.image.size.height-90)];
+             self.footerImage.image = [self drawFront:[UIImage imageNamed:@"white"] text:combined size:20.0f atPoint:CGPointMake(120,10)];
          }
      }];
     
@@ -141,8 +142,9 @@
 - (void)showActivityProviderWithImage:(UIImage *)image
 {
     
-    image = [self drawFront:image text:self.textField.text atPoint:CGPointMake(30, self.videoImage.image.size.height-90)];
-    image = [self imageByCombiningImage:image withImage:[UIImage imageNamed:@"livePaperLogo-20"]];
+    self.footerImage.image = [self drawFront:[UIImage imageNamed:@"white"] text:self.textField.text size:30.0f atPoint:CGPointMake(120, 10)];
+    image = [self imageByCombiningImage:image withImage:self.footerImage.image secondImagePoint:CGPointMake(0, image.size.height) sumSizes:YES];
+    image = [self imageByCombiningImage:image withImage:[UIImage imageNamed:@"livePaperLogo-20"] secondImagePoint:CGPointMake(image.size.width-30, 10) sumSizes:NO];
     
     NSMutableArray *activityItems = [NSMutableArray arrayWithObjects:@"title",image, nil];
     
@@ -150,7 +152,7 @@
     //NSArray *applicationActivities = @[[CustomActivity new],[OtherCustomActivity new]];
     UIActivityViewController *vc = [[UIActivityViewController alloc]initWithActivityItems:activityItems
                                                                     applicationActivities:nil];
-    vc.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList,UIActivityTypeSaveToCameraRoll];
+    vc.excludedActivityTypes = @[UIActivityTypeAssignToContact, UIActivityTypeCopyToPasteboard, UIActivityTypeAddToReadingList];
     
     
     //-- define the activity view completion handler
@@ -173,24 +175,22 @@
     [self presentViewController:vc animated:YES completion:nil];
 }
 
-- (UIImage*)drawFront:(UIImage*)image text:(NSString*)text atPoint:(CGPoint)point
+- (UIImage*)drawFront:(UIImage*)image text:(NSString*)text size:(CGFloat)size atPoint:(CGPoint)point
 {
-    UIFont *font = [UIFont systemFontOfSize:30.0f];
-    UIGraphicsBeginImageContext(image.size);
+    UIFont *font = [UIFont fontWithName:@"Noteworthy-Light" size:size];
+    
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0.0f);
+
     [image drawInRect:CGRectMake(0,0,image.size.width,image.size.height)];
-    CGRect rect = CGRectMake(point.x, point.y, image.size.width-60, 80);
+    CGRect rect = CGRectMake(point.x, point.y, image.size.width-40, 80);
     [[UIColor whiteColor] set];
     
     NSMutableAttributedString* attString = [[NSMutableAttributedString alloc] initWithString:text];
     NSRange range = NSMakeRange(0, [attString length]);
     
     [attString addAttribute:NSFontAttributeName value:font range:range];
-    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor whiteColor] range:range];
+    [attString addAttribute:NSForegroundColorAttributeName value:[UIColor blackColor] range:range];
     
-    NSShadow* shadow = [[NSShadow alloc] init];
-    shadow.shadowColor = [UIColor darkGrayColor];
-    shadow.shadowOffset = CGSizeMake(1.0f, 1.5f);
-    [attString addAttribute:NSShadowAttributeName value:shadow range:range];
     
     [attString drawInRect:CGRectIntegral(rect)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -198,13 +198,13 @@
     
     return newImage;
 }
-- (UIImage*)imageByCombiningImage:(UIImage*)firstImage withImage:(UIImage*)secondImage {
+- (UIImage*)imageByCombiningImage:(UIImage*)firstImage withImage:(UIImage*)secondImage secondImagePoint:(CGPoint)position sumSizes:(BOOL)sum {
     UIImage *image = nil;
     
-    UIGraphicsBeginImageContextWithOptions(firstImage.size, NO, [[UIScreen mainScreen] scale]);
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(firstImage.size.width, (sum)?firstImage.size.height+secondImage.size.height+200: firstImage.size.height) , NO, [[UIScreen mainScreen] scale]);
     
     [firstImage drawAtPoint:CGPointMake(0,0)];
-    [secondImage drawAtPoint:CGPointMake(firstImage.size.width-30, 10)];
+    [secondImage drawAtPoint:position];
     image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     

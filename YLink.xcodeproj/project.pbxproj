@@ -18,6 +18,7 @@
 		DA4EFCCB1A86D8DD006FDB43 /* CollectionViewCellVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4EFCCA1A86D8DD006FDB43 /* CollectionViewCellVideo.m */; };
 		DA4EFCCE1A86D972006FDB43 /* YoutubeAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA4EFCCD1A86D972006FDB43 /* YoutubeAPIClient.m */; };
 		DAA55AED1A87EC0800E377E8 /* launch.PNG in Resources */ = {isa = PBXBuildFile; fileRef = DAA55AEC1A87EC0800E377E8 /* launch.PNG */; };
+		DAA55AF11A87FB1200E377E8 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = DAA55AF01A87FB1200E377E8 /* white.png */; };
 		DAC8FB1E1A870A38004E37B7 /* EditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB1D1A870A38004E37B7 /* EditorViewController.m */; };
 		DAC8FB211A870F02004E37B7 /* CustomActivityItemProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB201A870F02004E37B7 /* CustomActivityItemProvider.m */; };
 		DAC8FB241A8713BD004E37B7 /* LinkAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DAC8FB231A8713BD004E37B7 /* LinkAPIClient.m */; };
@@ -58,6 +59,7 @@
 		DA4EFCCC1A86D972006FDB43 /* YoutubeAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubeAPIClient.h; sourceTree = "<group>"; };
 		DA4EFCCD1A86D972006FDB43 /* YoutubeAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubeAPIClient.m; sourceTree = "<group>"; };
 		DAA55AEC1A87EC0800E377E8 /* launch.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.PNG; sourceTree = "<group>"; };
+		DAA55AF01A87FB1200E377E8 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
 		DAC8FB1C1A870A38004E37B7 /* EditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditorViewController.h; sourceTree = "<group>"; };
 		DAC8FB1D1A870A38004E37B7 /* EditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditorViewController.m; sourceTree = "<group>"; };
 		DAC8FB1F1A870F02004E37B7 /* CustomActivityItemProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomActivityItemProvider.h; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				DA4EFCAD1A86BC00006FDB43 /* Main.storyboard */,
 				DA4EFCB01A86BC00006FDB43 /* Images.xcassets */,
 				DAA55AEC1A87EC0800E377E8 /* launch.PNG */,
+				DAA55AF01A87FB1200E377E8 /* white.png */,
 				DA4EFCB21A86BC00006FDB43 /* LaunchScreen.xib */,
 				DA4EFCA31A86BC00006FDB43 /* Supporting Files */,
 				DA4EFCC91A86D8DD006FDB43 /* CollectionViewCellVideo.h */,
@@ -274,6 +277,7 @@
 				DA4EFCAF1A86BC00006FDB43 /* Main.storyboard in Resources */,
 				DAC8FB261A872975004E37B7 /* livePaperLogo.png in Resources */,
 				DA4EFCB41A86BC00006FDB43 /* LaunchScreen.xib in Resources */,
+				DAA55AF11A87FB1200E377E8 /* white.png in Resources */,
 				DA4EFCB11A86BC00006FDB43 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
