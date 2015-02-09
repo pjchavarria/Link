@@ -6,7 +6,7 @@ All images are readable by LinkReader app (https://www.linkcreationstudio.com/le
 http://developerweek.com/
 
 ## Technologies 
-Link (https://www.linkcreationstudio.com)
+LinkReader (https://www.linkcreationstudio.com)
 HP Helios (http://www8.hp.com/us/en/cloud/helion-overview.html)
 
 ## The team
