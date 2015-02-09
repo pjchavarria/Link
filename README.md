@@ -1,4 +1,3 @@
-## The App
 Grab your youtube video, get a frame, add a description, print!
 All images are readable by LinkReader app (https://www.linkcreationstudio.com/learn/app)
 
