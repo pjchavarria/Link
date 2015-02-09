@@ -52,9 +52,9 @@ BOOL fetchingVideos;
             }];
         }
         
-        
-        
     }
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getFeaturedVideos) name:@"loggedIntoYoutubeNotification" object:nil];
 }
 
 - (void)setAccessToken:(NSString *)accessToken

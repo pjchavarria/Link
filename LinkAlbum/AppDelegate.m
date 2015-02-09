@@ -79,6 +79,8 @@
                 
                 [[YoutubeAPIClient client].requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@",accessToken] forHTTPHeaderField:@"Authorization"];
                 
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"loggedIntoYoutubeNotification" object:nil];
+                
             } error:^(NSURLSessionDataTask *task, NSError *error) {
                 NSLog(@"%@",error);
             }];

@@ -26,7 +26,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getMyVideos) name:@"loggedIntoYoutubeNotification" object:nil];
+}
 
+- (void)getMyVideos
+{
     [[YoutubeAPIClient client] getMyVideos:^(NSURLSessionDataTask *task, id responseObject) {
         NSLog(@"%@",responseObject);
         self.allVideos = responseObject[@"items"];

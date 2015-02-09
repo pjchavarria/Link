@@ -127,30 +127,20 @@
 			children = (
 				DA4EFCA71A86BC00006FDB43 /* AppDelegate.h */,
 				DA4EFCA81A86BC00006FDB43 /* AppDelegate.m */,
-				DA4EFCAA1A86BC00006FDB43 /* ViewController.h */,
-				DA4EFCAB1A86BC00006FDB43 /* ViewController.m */,
-				DAC8FB301A87584E004E37B7 /* MyViewController.h */,
-				DAC8FB311A87584E004E37B7 /* MyViewController.m */,
+				DA4EFCC91A86D8DD006FDB43 /* CollectionViewCellVideo.h */,
+				DA4EFCCA1A86D8DD006FDB43 /* CollectionViewCellVideo.m */,
+				DAC8FB1F1A870F02004E37B7 /* CustomActivityItemProvider.h */,
+				DAC8FB201A870F02004E37B7 /* CustomActivityItemProvider.m */,
+				DABFEE151A8958B00049FD9C /* API */,
+				DABFEE141A8958970049FD9C /* Controllers */,
 				DA4EFCAD1A86BC00006FDB43 /* Main.storyboard */,
 				DA4EFCB01A86BC00006FDB43 /* Images.xcassets */,
 				DAA55AEC1A87EC0800E377E8 /* launch.PNG */,
 				DAA55AF01A87FB1200E377E8 /* white.png */,
-				DA4EFCB21A86BC00006FDB43 /* LaunchScreen.xib */,
-				DA4EFCA31A86BC00006FDB43 /* Supporting Files */,
-				DA4EFCC91A86D8DD006FDB43 /* CollectionViewCellVideo.h */,
-				DA4EFCCA1A86D8DD006FDB43 /* CollectionViewCellVideo.m */,
-				DA4EFCCC1A86D972006FDB43 /* YoutubeAPIClient.h */,
-				DA4EFCCD1A86D972006FDB43 /* YoutubeAPIClient.m */,
-				DAC8FB221A8713BD004E37B7 /* LinkAPIClient.h */,
-				DAC8FB231A8713BD004E37B7 /* LinkAPIClient.m */,
-				DAC8FB291A873366004E37B7 /* HeliosAPIClient.h */,
-				DAC8FB2A1A873366004E37B7 /* HeliosAPIClient.m */,
-				DAC8FB1C1A870A38004E37B7 /* EditorViewController.h */,
-				DAC8FB1D1A870A38004E37B7 /* EditorViewController.m */,
-				DAC8FB1F1A870F02004E37B7 /* CustomActivityItemProvider.h */,
-				DAC8FB201A870F02004E37B7 /* CustomActivityItemProvider.m */,
 				DAC8FB251A872975004E37B7 /* livePaperLogo.png */,
 				DAC8FB271A872ADF004E37B7 /* livePaperLogo-20.png */,
+				DA4EFCB21A86BC00006FDB43 /* LaunchScreen.xib */,
+				DA4EFCA31A86BC00006FDB43 /* Supporting Files */,
 			);
 			path = LinkAlbum;
 			sourceTree = "<group>";
@@ -179,6 +169,32 @@
 				DA4EFCBE1A86BC00006FDB43 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DABFEE141A8958970049FD9C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DA4EFCAA1A86BC00006FDB43 /* ViewController.h */,
+				DA4EFCAB1A86BC00006FDB43 /* ViewController.m */,
+				DAC8FB301A87584E004E37B7 /* MyViewController.h */,
+				DAC8FB311A87584E004E37B7 /* MyViewController.m */,
+				DAC8FB1C1A870A38004E37B7 /* EditorViewController.h */,
+				DAC8FB1D1A870A38004E37B7 /* EditorViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		DABFEE151A8958B00049FD9C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DA4EFCCC1A86D972006FDB43 /* YoutubeAPIClient.h */,
+				DA4EFCCD1A86D972006FDB43 /* YoutubeAPIClient.m */,
+				DAC8FB221A8713BD004E37B7 /* LinkAPIClient.h */,
+				DAC8FB231A8713BD004E37B7 /* LinkAPIClient.m */,
+				DAC8FB291A873366004E37B7 /* HeliosAPIClient.h */,
+				DAC8FB2A1A873366004E37B7 /* HeliosAPIClient.m */,
+			);
+			name = API;
 			sourceTree = "<group>";
 		};
 		E39D6A64574F6D2066714E2D /* Pods */ = {

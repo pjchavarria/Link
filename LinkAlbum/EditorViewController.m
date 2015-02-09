@@ -103,6 +103,9 @@
 
 - (IBAction)pressedPrint:(id)sender {
     
+//    
+//    [self showActivityProviderWithImage:self.videoImage.image];
+//    return;
     NSLog(@"working..");
 
     //NSData *imageData = UIImageJPEGRepresentation(self.videoImage.image, 1.0);
@@ -145,6 +148,8 @@
     UIImage *newImage = [self drawFront:[UIImage imageNamed:@"white"] text:self.textField.text size:25.0f atPoint:CGPointMake(120, 10)];
     image = [self imageByCombiningImage:image withImage:newImage secondImagePoint:CGPointMake(0, image.size.height) sumSizes:YES];
     image = [self imageByCombiningImage:image withImage:[UIImage imageNamed:@"livePaperLogo-20"] secondImagePoint:CGPointMake(image.size.width-120, 30) sumSizes:NO];
+    image = [self drawFront:image text:@"Feb 9, 2015" size:17.0f atPoint:CGPointMake(image.size.width-(98+120), self.videoImage.image.size.height+60)];
+    
     
     NSMutableArray *activityItems = [NSMutableArray arrayWithObjects:@"title",image, nil];
     
