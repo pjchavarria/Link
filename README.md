@@ -6,7 +6,7 @@ http://developerweek.com/
 
 ## Technologies 
 LinkReader (https://www.linkcreationstudio.com)
-HP Helios (http://www8.hp.com/us/en/cloud/helion-overview.html)
+HP Helion (http://www8.hp.com/us/en/cloud/helion-overview.html)
 
 ## The team
 http://accelerate.im/projects/150
